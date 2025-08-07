@@ -83,7 +83,11 @@ export default {
       isDevelopment: process.env.APP_ENV === 'development'
     },
     experiments: {
-      typedRoutes: true
+      typedRoutes: true,
+      // Performance optimizations
+      tsconfigPaths: true,
+      // Enable tree shaking
+      treeShaking: true
     },
     // Add development specific configuration
     development: {

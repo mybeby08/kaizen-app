@@ -9,7 +9,11 @@
     "test": "jest --watchAll",
     "lint": "expo lint",
     "build:android:local": "eas build --platform android --local --profile local-prod",
-    "build:android:dev": "eas build --platform android --local --profile development"
+    "build:android:dev": "eas build --platform android --local --profile development",
+    "analyze": "expo start --analyze",
+    "bundle:analyze": "npx react-native-bundle-visualizer",
+    "clean": "expo start --clear",
+    "build:optimized": "EXPO_OPTIMIZE=1 expo start"
   },
   "jest": {
     "preset": "jest-expo"
